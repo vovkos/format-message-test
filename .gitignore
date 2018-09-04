@@ -1,0 +1,102 @@
+#ignore thumbnails created by windows
+Thumbs.db
+.DS_Store
+
+#Ignore files build by Visual Studio
+*.obj
+*.exe
+*.msi
+*.zip
+*.pdb
+*.user
+*.aps
+*.pch
+*.ipch
+*.vspscc
+
+*_i.h
+*_i.c
+*_p.c
+*.tlb
+*.lib
+*.dll
+
+*.orig
+*.ipch
+*.sdf
+*.opensdf
+*.ncb
+*.suo
+*.tlh
+*.bak
+*.cache
+*.ilk
+*.log
+[Bb]in
+[Dd]ebug/
+*.sbr
+obj/
+GeneratedFiles/
+[Rr]elease*/
+_ReSharper*/
+[Tt]est[Rr]esult*
+[Rr]edist/
+
+# more visual studio-generated files
+
+BuildLog.htm*
+*.plg
+*.res
+*.idb
+
+# QT-generated files
+
+qrc_*.cpp
+moc_*.cpp
+moc_*.cpp_parameters
+ui_*.h
+*.moc
+*.moc_parameters
+*.pro.user.*
+*.qrc.depends
+
+# ragel- and till-generated files
+
+*.rl.cpp
+*.llk.h
+*.llk.cpp
+
+# cmake-generated projects/makefiles
+
+prj/
+[bB]uild/
+.[bB]uild/
+/.project
+
+*.egg-info/
+
+axl/cmake/latest/
+bulldozer/cmake/latest/
+jancy/cmake/latest/
+njscroll/cmake/latest/
+qtpropertybrowser/cmake/latest/
+
+# cmake-generated source files
+
+ioninja/src/nj_cmn/nj_VersionPp.h
+bulldozer/src/Version.h
+
+# cmake-generated DDK sources files
+
+devmon/src/dm_sys_cmn/sources
+devmon/src/dm_sys_core/sources
+devmon/src/dm_sys_pnp/sources
+
+# python compiled byte-code
+
+*.pyc
+
+# other special files
+
+paths.cmake
+ioninja/private-key
