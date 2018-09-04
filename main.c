@@ -25,10 +25,14 @@ void printSystemMessage (
 		NULL
 		);
 
-	if (result)
-		wprintf (L"%s\n", message);
-	else
+	if (!result)
+	{
 		wprintf (L"failed (%d)\n", GetLastError ());
+		return;
+	}
+
+	wprintf (L"%s\n", message);
+	LocalFree (message);
 }
 
 int main ()
@@ -53,7 +57,7 @@ int main ()
 		{ MAKELANGID (LANG_NEUTRAL, SUBLANG_SYS_DEFAULT), L"LANG_NEUTRAL, SUBLANG_SYS_DEFAULT" },
 		{ MAKELANGID (LANG_INVARIANT, SUBLANG_NEUTRAL),   L"LANG_INVARIANT, SUBLANG_NEUTRAL" },
 		{ MAKELANGID (LANG_ENGLISH, SUBLANG_DEFAULT),     L"LANG_ENGLISH, SUBLANG_DEFAULT" },
-		{ MAKELANGID (LANG_ENGLISH, SUBLANG_ENGLISH_US),  L"LANG_NEUTRAL, SUBLANG_ENGLISH_US" },
+		{ MAKELANGID (LANG_ENGLISH, SUBLANG_ENGLISH_US),  L"LANG_ENGLISH, SUBLANG_ENGLISH_US" },
 	};
 
 	UINT i, j;
