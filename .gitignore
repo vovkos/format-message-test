@@ -6,7 +6,6 @@ Thumbs.db
 *.obj
 *.exe
 *.msi
-*.zip
 *.pdb
 *.user
 *.aps
